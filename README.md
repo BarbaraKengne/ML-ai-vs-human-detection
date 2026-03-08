@@ -4,7 +4,6 @@ Projet personnel — Licence 3 Informatique, Aix-Marseille Université.
 
 Avec GPT-4, Claude, Gemini qui génèrent des textes de plus en plus convaincants, j'ai voulu explorer si des modèles classiques de ML pouvaient encore les distinguer d'un texte humain.
 
----
 
 ## Ce que fait ce projet
 
