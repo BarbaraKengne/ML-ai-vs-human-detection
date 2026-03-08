@@ -16,7 +16,7 @@ Utiliser des métriques pré-calculées : perplexité, burstiness, diversité le
 **Approche 2 — TF-IDF sur le texte brut**
 Laisser le modèle apprendre directement depuis les mots utilisés.
 
-Et j'ai ajouté une analyse des mots "trahisseurs" : quels termes sont le plus associés aux textes IA vs humains ?
+Et j'ai analysé les mots "trahisseurs" : quels termes sont le plus associés aux textes IA vs humains ?
 
 ## Résultats
 
@@ -24,19 +24,19 @@ Et j'ai ajouté une analyse des mots "trahisseurs" : quels termes sont le plus a
 
 | Modèle | Accuracy | F1-Score |
 |--------|----------|----------|
-| Régression Logistique | ~XX% | ~XX% |
-| Random Forest | ~XX% | ~XX% |
-| SVM Linéaire | ~XX% | ~XX% |
+| Régression Logistique | 51% | 26% |
+| Random Forest | 55.5% | 45% |
+| SVM Linéaire | 51% | 26% |
 
 **Approche TF-IDF :**
 
 | Modèle | Accuracy | F1-Score |
 |--------|----------|----------|
-| Naive Bayes | ~XX% | ~XX% |
-| Régression Logistique | ~XX% | ~XX% |
-| SVM Linéaire | ~XX% | ~XX% |
+| Naive Bayes | 52.5% | 34% |
+| Régression Logistique | 51.5% | 43% |
+| SVM Linéaire | 53% | 48% |
 
-*(Les valeurs exactes sont dans le notebook après exécution)*
+**Observation clé :** les scores modestes (~50%) ne sont pas un échec — ils reflètent la difficulté réelle du problème. Les LLMs modernes produisent des textes stylistiquement très proches des textes humains, surtout sur des textes courts. Ce résultat est lui-même informatif.
 
 ---
 
@@ -58,13 +58,13 @@ jupyter notebook ai_vs_human_barbara.ipynb
 
 ## Ce que j'ai trouvé intéressant
 
-Les trois modèles IA (GPT-4, Claude, Gemini) ont des profils stylistiques légèrement différents entre eux. Ça ouvre une piste : est-ce qu'on pourrait classifier non pas juste "IA ou humain" mais "quel modèle IA ?" — c'est ce que j'aimerais explorer ensuite.
+Les trois modèles IA (GPT-4, Claude, Gemini) ont des profils stylistiques légèrement différents entre eux. Ça ouvre une piste : est-ce qu'on pourrait classifier non pas juste "IA ou humain" mais "quel modèle IA ?" — c'est ce que j'aimerais explorer ensuite avec BERT.
 
 ## Pistes d'amélioration
 
 - Classification multi-classe : Human / GPT-4 / Claude / Gemini
-- Tester avec des embeddings BERT
-- Tester sur des textes plus longs
+- Tester avec des embeddings BERT sur des textes plus longs
+- Collecter des textes plus longs pour améliorer la robustesse
 
 ---
 
