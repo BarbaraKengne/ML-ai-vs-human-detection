@@ -1,6 +1,6 @@
 # Détection de textes générés par IA
 
-Projet personnel — Licence 3 Informatique, Aix-Marseille Université.
+Projet personnel  Licence 3 Informatique, Aix-Marseille Université.
 
 Avec GPT-4, Claude, Gemini qui génèrent des textes de plus en plus convaincants, j'ai voulu explorer si des modèles classiques de ML pouvaient encore les distinguer d'un texte humain.
 
@@ -57,7 +57,7 @@ jupyter notebook ai_vs_human_barbara.ipynb
 
 ## Ce que j'ai trouvé intéressant
 
-Les trois modèles IA (GPT-4, Claude, Gemini) ont des profils stylistiques légèrement différents entre eux. Ça ouvre une piste : est-ce qu'on pourrait classifier non pas juste "IA ou humain" mais "quel modèle IA ?" — c'est ce que j'aimerais explorer ensuite avec BERT.
+Les trois modèles IA (GPT-4, Claude, Gemini) ont des profils stylistiques légèrement différents entre eux. Ça ouvre une piste : est-ce qu'on pourrait classifier non pas juste "IA ou humain" mais "quel modèle IA ?" c'est ce que j'aimerais explorer ensuite avec BERT.
 
 ## Pistes d'amélioration
 
