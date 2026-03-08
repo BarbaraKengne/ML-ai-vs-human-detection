@@ -7,7 +7,7 @@ Avec GPT-4, Claude, Gemini qui génèrent des textes de plus en plus convaincant
 
 ## Ce que fait ce projet
 
-À partir d'un dataset de 1 000 textes (537 humains, 463 IA — dont GPT-4, Claude, Gemini), j'ai testé deux approches :
+À partir d'un dataset de 1 000 textes (537 humains, 463 IA dont GPT-4, Claude, Gemini), j'ai testé deux approches :
 
 **Approche 1 — Features stylistiques numériques**
 Utiliser des métriques pré-calculées : perplexité, burstiness, diversité lexicale, cohérence sémantique...
